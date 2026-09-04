@@ -88,7 +88,7 @@ Reconstruction 3D d'objets réels par photogrammétie et synthèse d'images par 
 <table align="center" width="100%">
 <tr>
 <td align="center" width="100%">
-<img src="assets/siri_reconstruction.png" width="100%" alt="Reconstruction 3D Three.js" />
+<img src="assets/3D_reconstructed_model.png" width="100%" alt="Reconstruction 3D Three.js" />
 <br><em>Modèle 3D reconstruit et visualisé sous Three.js.</em>
 </td>
 </tr>
