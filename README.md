@@ -1,7 +1,7 @@
 <div align="center">
 
 **Étudiant en Master 2 [Informatique, Synthèse d'Images et Conception Graphique (ISICG)](https://www.sciences.unilim.fr/informatique/master-informatique-isicg/)**  
-*Faculté des Sciences et Techniques de Limoges*
+*Université de Limoges*
 
 Intéressé par le **rendu PBR (Physically Based Rendering)**, la **simulation physique** et le **calcul accéléré sur GPU**.
 
