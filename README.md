@@ -18,7 +18,7 @@ Intéressé par le **rendu PBR (Physically Based Rendering)**, la **simulation p
 
 # 🛠️ Projets
 
-## 🌊 Simulation de Fluides Accélérée par GPU
+## 🌊= Simulation de fluides accélérée par GPU
 **Stage R&D, laboratoire XLIM, Limoges**
 
 Développement d'une simulation de fluides basée sur la méthode de Boltzmann (LBM), avec accélération GPU via CUDA. Le système prend en charge la simulation monophasique (1 fluide) puis diphasique (eau et air), modélisant la formation et la remontée de bulles d'air en 2D, avant une extension en 3D.
@@ -76,5 +76,25 @@ Extension de la simulation en 3D (C++ et CUDA) avec intégration de la biblioth�
 </td>
 </tr>
 </table>
+
+## Reconstruction 3D par photogrammétrie
+Reconstruction 3D d'objets réels par photogrammétie et synthèse d'images par rendu inverse.
+<br>
+**Technologies :** 
+![RealityScan](https://img.shields.io/badge/RealityScan-%23000000.svg?style=flat&logo=epicgames&logoColor=white) ![Blender](https://img.shields.io/badge/Blender-%23F5792A.svg?style=flat&logo=blender&logoColor=white) ![Three.js](https://img.shields.io/badge/Three.js-black?style=flat&logo=three.dot.js&logoColor=white) ![Quarto](https://img.shields.io/badge/Quarto-%234169E1.svg?style=flat)
+<br>
+**[Consulter le projet complet et le visualiseur 3D interactif](https://harounjilani.github.io/Quarto/)**
+
+<table align="center" width="100%">
+<tr>
+<td align="center" width="100%">
+<img src="assets/siri_reconstruction.png" width="100%" alt="Reconstruction 3D Three.js" />
+<br><em>Modèle 3D reconstruit et visualisé sous Three.js.</em>
+</td>
+</tr>
+</table>
+<br>
+
+
 
 
