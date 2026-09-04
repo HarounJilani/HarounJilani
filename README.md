@@ -1,6 +1,6 @@
 <div align="center">
 
-**Étudiant en Master 2 [Informatique, Synthèse d'Images et Conception Graphique (ISICG)](https://www.sciences.unilim.fr/informatique/master-informatique-isicg/)**  
+**Étudiant en master 2 [Informatique, Synthèse d'Images et Conception Graphique (ISICG)](https://www.sciences.unilim.fr/informatique/master-informatique-isicg/)**  
 *Université de Limoges*
 
 Intéressé par le **rendu PBR (Physically Based Rendering)**, la **simulation physique** et le **calcul accéléré sur GPU**.
@@ -18,8 +18,63 @@ Intéressé par le **rendu PBR (Physically Based Rendering)**, la **simulation p
 
 # 🛠️ Projets
 
+## 🌊 Simulation de Fluides Accélérée par GPU
+**Stage R&D, laboratoire XLIM, Limoges**
 
-<br>
+Développement d'une simulation de fluides basée sur la méthode de Boltzmann (LBM), avec accélération GPU via CUDA. Le système prend en charge la simulation monophasique (1 fluide) puis diphasique (eau et air), modélisant la formation et la remontée de bulles d'air en 2D, avant une extension en 3D.
+
+**Technologies :** 
+![C++](https://img.shields.io/badge/c++-%2300599C.svg?style=flat&logo=c%2B%2B&logoColor=white) ![CUDA](https://img.shields.io/badge/cuda-000000.svg?style=flat&logo=nVIDIA&logoColor=green) ![Python](https://img.shields.io/badge/python-3670A0?style=flat&logo=python&logoColor=ffdd54) ![OpenGL](https://img.shields.io/badge/OpenGL-%23FFFFFF.svg?style=flat&logo=opengl) ![OpenVDB](https://img.shields.io/badge/OpenVDB-%23013243.svg?style=flat) ![NVIDIA Warp](https://img.shields.io/badge/NVIDIA%20Warp-%2376B900.svg?style=flat&logo=nvidia&logoColor=white)
+
+### 1. Première phase : validation CPU vs GPU (1 fluide)
+Implémentation initiale en Python pour valider la méthode LBM avant la parallélisation sur GPU. La simulation est visualisée avec OpenGL, en utilisant le cas test du vortex de von Kármán pour observer le comportement du fluide.
+
+<table align="center" width="100%">
+<tr>
+<td align="center" width="50%">
+<b>Implémentation Initiale (Python CPU)</b><br><br>
+<video src="https://github.com/user-attachments/assets/f975a769-a7b0-4f14-ab77-7f287e923454" controls width="100%"></video>
+<br><em>Résolution : 100 × 50 | ~143 ms/frame (~7 FPS) </em>
+</td>
+<td align="center" width="50%">
+<b>Implémentation Optimisée (CUDA GPU)</b><br><br>
+<video src="https://github.com/user-attachments/assets/0f347854-f7cf-4039-b175-759d79996c81" controls width="100%"></video>
+<br><em>Résolution : 1200 × 800 | ~10 ms/frame (~100 FPS) </em>
+</td>
+</tr>
+</table>
+
+### 2. Deuxième phase : simulation diphasique (eau/air)
+Extension du modèle pour simuler l'interaction entre deux fluides et la dynamique des bulles. Sur CPU, l'identification des composantes connexes (bulles) reposait sur un algorithme séquentiel itératif de type Union-Find sur grille. La parallélisation de cette réduction de graphe constituant un goulot d'étranglement, le calcul a été déporté sur GPU en intégrant l'algorithme optimisé CCL HA4 de NVIDIA, permettant un suivi précis en temps réel.
+
+<table align="center" width="100%">
+<tr>
+<td align="center" width="50%">
+<video src="https://github.com/user-attachments/assets/7afd0810-3702-48fb-98c2-70f209794d57" controls width="100%"></video>
+<br><em>Simulation des fluides dans une structure poreuse 2D (céramique).</em>
+</td>
+<td align="center" width="50%">
+<video src="https://github.com/user-attachments/assets/38f8e28f-ce1e-4e03-ac72-46dac5202c3d" controls width="100%"></video>
+<br><em>Simulation diphasique d'un robinet illustrant la formation de bulles.</em>
+</td>
+</tr>
+</table>
+
+### 3. Simulation 3D et rendu volumétrique
+Extension de la simulation en 3D (C++ et CUDA) avec intégration de la bibliothèque OpenVDB pour le traitement des géométries. Le rendu est fait par un compute shader GLSL exécutant un algorithme de ray marching volumétrique. Le shader évalue les normales par calcul de gradient sur la grille et modélise physiquement les interfaces eau/air (équations de Fresnel, réflexion, réfraction, absorption).
+
+<table align="center" width="100%">
+<tr>
+<td align="center" width="50%">
+<video src="https://github.com/user-attachments/assets/dbf55cb2-b622-4211-aec1-3ac2d258b711
+" controls width="100%"></video>
+<br><em>Visualisation 3D de la dynamique du fluide par nuage de points.</em>
+</td>
+<td align="center" width="50%">
+<video src="https://github.com/user-attachments/assets/32d4fcb3-a1f2-4b3c-af54-099c1f9645d9" controls width="100%"></video>
+<br><em>Rendu de l'eau via ray marching volumétrique. </em>
+</td>
+</tr>
+</table>
 
 
-</div>
