@@ -85,16 +85,13 @@ Reconstruction 3D d'objets réels par photogrammétie et synthèse d'images par 
 <br>
 **[Consulter le projet complet et le visualiseur 3D interactif](https://harounjilani.github.io/Quarto/)**
 
-<table align="center" width="100%">
+<table align="center" width="50%">
 <tr>
-<td align="center" width="100%">
-<img src="assets/3D_reconstructed_model.png" width="100%" alt="Reconstruction 3D Three.js" />
-<br><em>Modèle 3D reconstruit et visualisé sous Three.js.</em>
+<td align="center" width="50%">
+<img src="assets/3D_reconstructed_model.png" width="50%" alt="Reconstruction 3D" />
+<br><em>Modèle 3D reconstruit et visualisé.</em>
 </td>
 </tr>
 </table>
-<br>
-
-
 
 
