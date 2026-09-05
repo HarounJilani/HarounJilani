@@ -169,7 +169,6 @@ Développement d'un moteur de ray tracing en C++, étendu par la suite en un pat
 
 ## Super Résolution d'Images
 
-
 Développement d'un modèle d'apprentissage profond pour la super-résolution d'images. L'objectif est de reconstruire des images faciales haute définition (128x128) à partir d'entrées basse résolution (32x32).
 
 **Technologies :** 
@@ -185,3 +184,24 @@ Développement d'un modèle d'apprentissage profond pour la super-résolution d'
   </tr>
 </table>
 <br>
+
+## 🐜 Suivi Vidéo et analyse de colonies de fourmis
+
+Création d'un logiciel d'analyse vidéo pour détecter et suivre les déplacements de fourmis à l'aide de la vision par ordinateur. Le programme calcule leur vitesse, repère les dépôts de phéromones et exporte toutes ces informations au format CSV. L'objectif final est d'utiliser ces données pour entraîner des intelligences artificielles capables de simuler le comportement d'une colonie.
+
+**Technologies :** 
+![Python](https://img.shields.io/badge/Python-%2314354C.svg?style=flat&logo=python&logoColor=white) ![OpenCV](https://img.shields.io/badge/OpenCV-%235C3EE8.svg?style=flat&logo=opencv&logoColor=white)
+
+<div align="center">
+  <a href="demo_fourmis">
+    <video src="https://github.com/user-attachments/assets/cfaf3aad-8a0b-4b00-8ec3-9472d5414721" width="80%" alt="Démo vidéo du suivi de fourmis" />
+  </a>
+  <br><em>fourmis</em>
+</div>
+<br>
+
+
+
+
+
+
