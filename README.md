@@ -143,15 +143,15 @@ Développement d'un moteur de ray tracing en C++, étendu par la suite en un pat
 
 <table align="center" width="100%">
   <tr>
-    <td align="center" width="33%">
+    <td align="center" width="33.33%">
       <img src="assets/conference.jpg" width="100%" alt="Scène Conference" />
       <br><em>Scène Conference (maillage).</em>
     </td>
-    <td align="center" width="33%">
+    <td align="center" width="33.33%">
       <img src="assets/refraction_reflexion.jpg" width="100%" alt="Matériaux" />
       <br><em>Matériaux transparents et miroirs.</em>
     </td>
-    <td align="center" width="33%">
+    <td align="center" width="33.33%">
       <img src="assets/sphere_tracing.jpg" width="100%" alt="Sphere Tracing" />
       <br><em>Rendu par sphere tracing (surfaces implicites).</em>
     </td>
@@ -159,7 +159,7 @@ Développement d'un moteur de ray tracing en C++, étendu par la suite en un pat
   <tr>
     <td align="center" colspan="3">
       <br>
-      <img src="assets/1024_spp_sponza_pbr.jpg" width="80%" alt="Rendu Path Tracing Sponza" />
+      <img src="assets/1024_spp_sponza_pbr.jpg" width="100%" alt="Rendu Path Tracing Sponza" />
       <br><em>Rendu final de la scène Sponza (textures PBR) par path tracing (1024 spp, 8 rebonds).</em>
     </td>
   </tr>
