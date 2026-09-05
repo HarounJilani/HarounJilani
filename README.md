@@ -196,7 +196,7 @@ Création d'un logiciel d'analyse vidéo pour détecter et suivre les déplaceme
   <a href="demo_fourmis">
     <video src="https://github.com/user-attachments/assets/cfaf3aad-8a0b-4b00-8ec3-9472d5414721" width="80%" alt="Démo vidéo du suivi de fourmis" />
   </a>
-  <br><em>fourmis</em>
+  <br><em>Démonstration du logiciel.</em>
 </div>
 <br>
 
