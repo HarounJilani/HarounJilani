@@ -173,12 +173,13 @@ Développement d'un moteur de ray tracing en C++, étendu par la suite en un pat
 Développement d'un modèle d'apprentissage profond pour la super-résolution d'images. L'objectif est de reconstruire des images faciales haute définition (128x128) à partir d'entrées basse résolution (32x32).
 
 **Technologies :** 
-![Python](https://img.shields.io/badge/Python-%2314354C.svg?style=flat&logo=python&logoColor=white) 
+![Python](https://img.shields.io/badge/Python-%2314354C.svg?style=flat&logo=python&logoColor=white)
+![TensorFlow](https://img.shields.io/badge/TensorFlow-%23FF6F00.svg?style=flat&logo=TensorFlow&logoColor=white)
 
 <table align="center" width="100%">
   <tr>
     <td align="center" width="85%">
-      <img src="assets/super_resolution.jpg" width="100%" alt="Comparaison des méthodes d'upscaling" />
+      <img src="assets/super_resolution.png" width="100%" alt="Comparaison des méthodes d'upscaling" />
     </td>
     <td align="left" width="15%" style="vertical-align: middle;">
       <br>1. Entrée (32x32)<br>
