@@ -18,7 +18,7 @@ Intéressé par le **rendu PBR (Physically Based Rendering)**, la **simulation p
 
 # 🛠️ Projets
 
-## 🌊= Simulation de fluides accélérée par GPU
+## 🌊 Simulation de fluides accélérée par GPU
 **Stage R&D, laboratoire XLIM, Limoges**
 
 Développement d'une simulation de fluides basée sur la méthode de Boltzmann (LBM), avec accélération GPU via CUDA. Le système prend en charge la simulation monophasique (1 fluide) puis diphasique (eau et air), modélisant la formation et la remontée de bulles d'air en 2D, avant une extension en 3D.
