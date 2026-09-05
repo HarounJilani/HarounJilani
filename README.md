@@ -109,20 +109,23 @@ Développement d'un moteur 3D en C++ et OpenGL reposant sur une architecture de 
 ![C++](https://img.shields.io/badge/c++-%2300599C.svg?style=flat&logo=c%2B%2B&logoColor=white) ![OpenGL](https://img.shields.io/badge/OpenGL-%23FFFFFF.svg?style=flat&logo=opengl) ![GLSL](https://img.shields.io/badge/GLSL-%23333333.svg?style=flat)
 
 <table align="center" width="100%">
-<tr>
-<td align="center" width="33%">
-<img src="assets/shadows_only.png" width="100%" alt="Shadow mapping uniquement" />
-<br><em>Shadow mapping uniquement.</em>
-</td>
-<td align="center" width="33%">
-<img src="assets/bloom_only.png" width="100%" alt="Bloom uniquement" />
-<br><em>Bloom uniquement.</em>
-</td>
-<td align="center" width="33%">
-<img src="assets/final_result_1.png" width="100%" alt="Rendu final complet" />
-<br><em>Shadow mapping + bloom + tone mapping + correction gamma.</em>
-</td>
-</tr>
+  <tr>
+    <td align="center" width="50%">
+      <img src="assets/shadows_only.png" width="100%" alt="Shadow mapping uniquement" />
+      <br><em>Shadow mapping uniquement.</em>
+    </td>
+    <td align="center" width="50%">
+      <img src="assets/bloom_only.png" width="100%" alt="Bloom uniquement" />
+      <br><em>Bloom uniquement.</em>
+    </td>
+  </tr>
+  <tr>
+    <td align="center" colspan="2">
+      <br>
+      <img src="assets/final_result_1.png" width="80%" alt="Rendu final complet" />
+      <br><em>Shadow mapping + bloom + tone mapping + correction gamma.</em>
+    </td>
+  </tr>
 </table>
 
 
