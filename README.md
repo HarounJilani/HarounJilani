@@ -178,15 +178,9 @@ Développement d'un modèle d'apprentissage profond pour la super-résolution d'
 
 <table align="center" width="100%">
   <tr>
-    <td align="center" width="85%">
+    <td align="center">
       <img src="assets/super_resolution.png" width="100%" alt="Comparaison des méthodes d'upscaling" />
-    </td>
-    <td align="left" width="15%" style="vertical-align: middle;">
-      <br>1. Entrée (32x32)<br>
-      <br>2. Nearest<br>
-      <br>3. Bicubique<br>
-      <br>4. Super Rés.<br>
-      <br>5. Réel (128x128)
+      <br><em><b>De haut en bas :</b> 1. Entrée (32x32) | 2. Nearest neighbor | 3. Bicubique | 4. Super résolution (modèle) | 5. Réel (128x128)</em>
     </td>
   </tr>
 </table>
